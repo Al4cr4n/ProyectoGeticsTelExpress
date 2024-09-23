@@ -141,7 +141,7 @@
                     </a>
                 </li>
                 <li class="menu-item active">
-                    <a href="mis_pedidos.html" class="menu-link">
+                    <a href="lista_pedidos.html" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-list-ul"></i>
                         <div>Mis pedidos</div>
                     </a>
@@ -171,18 +171,18 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="FAQs.html" class="menu-link">
+                    <a href="FAQS.html" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-question-mark"></i>
                         <div>Ayuda al cliente</div>
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="FAQs.html" class="menu-link">
+                            <a href="FAQS.html" class="menu-link">
                                 <div>* FAQs</div>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="resenas.html" class="menu-link">
+                            <a href="resenia.html" class="menu-link">
                                 <div>* Reseñas</div>
                             </a>
                         </li>
@@ -307,17 +307,12 @@
                                     <div class="dropdown-divider"></div>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="cambio_contra_agente.html">
+                                    <a class="dropdown-item" href="../Sistema/cambio_contraseña.html">
                                         <i class="bx bx-user me-2"></i>
                                         <span class="align-middle">Cambio de Contraseña</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="ajustes_superadmin.html">
-                                        <i class="bx bx-cog me-2"></i>
-                                        <span class="align-middle">Ajustes</span>
-                                    </a>
-                                </li>
+
 
                                 <li>
                                     <div class="dropdown-divider"></div>
@@ -377,25 +372,35 @@
                     </div>
 
                     <!-- Order Totals -->
-                    <p>Subtotal: S/839.99</p>
-                    <p>Delivery: S/15.00</p>
-                    <h5>Total: S/854.99</h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 offset-md-6 text-end">
+                            <p><strong>Subtotal:</strong> $980.00</p>
+                            <p><strong>Delivery:</strong> S/. 15.00</p>
+                            <hr>
+                            <p><strong>Total General:</strong> S/. 995.00</p>
+                        </div>
+                    </div>
 
                     <!-- Communication Section -->
-                    <div class="communication-section">
-                        <div>
-                            <button class="btn-delete">Eliminar</button>
-                            <!-- Modify button redirects to another view (e.g., 'editar_pedido.html') -->
-                            <a href="editar_pedido.html" class="btn-modify">Modificar</a>
-                        </div>
-                        <div>
-                            <p>Comunicarse con un agente:</p>
-                            <i class="bx bx-chat" style="font-size: 24px; cursor: pointer;"></i>
+                     <div class="row">
+                        <div class="communication-section justify-content-between ">
+                            <div style="margin-left: 2rem;">
+                                <p>Comunicarse con un agente:</p>
+                                <i class="bx bx-chat" style="font-size: 24px; cursor: pointer;" onclick="window.location.href='chat.html';"></i>
+                            </div>
+                            <div style="margin-right: 1rem;">
+                                <button class="btn-delete">Eliminar</button>
+                                <!-- Modify button redirects to another view (e.g., 'editar_pedido.html') -->
+                                <a href="editar_orden.html" class="btn-modify">Modificar</a>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <!-- Shipping and Payment Details -->
-                    <div class="details-box">
+                    <div class="">
+                    <div class="details-box card">
                         <h5>Detalles de Envío</h5>
                         <form id="shipping-details-form">
                             <label for="direccion">Dirección de envío:</label>
@@ -410,8 +415,9 @@
                             <button type="submit" class="btn-save">Guardar</button>
                         </form>
                     </div>
+                    </div>
 
-                    <div class="details-box">
+                    <div class="details-box card">
                         <h5>Detalles de Pago</h5>
                         <form id="payment-details-form">
                             <label for="monto-cancelado">Monto Cancelado:</label>

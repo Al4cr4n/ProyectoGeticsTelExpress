@@ -16,7 +16,7 @@
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
   />
 
-  <title>Reseñas</title>
+  <title>Preguntas frecuentes</title>
 
   <meta name="description" content="" />
 
@@ -54,6 +54,11 @@
   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="../../assets/js/config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+
 </head>
 <body>
 <!-- Layout wrapper -->
@@ -135,17 +140,17 @@
             </a>
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="FAQs.html" class="menu-link">
+                <a href="FAQS.html" class="menu-link">
                   <div data-i18n="Faqs">FAQs</div>
                 </a>
               </li>
-              <li class="menu-item">
-                <a href="reseñas.html" class="menu-link">
+              <li class="menu-item active">
+                <a href="resenia.html" class="menu-link">
                   <div data-i18n="Reseñas">Reseñas</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="foro.html" class="menu-link">
+                <a href="Foro.html" class="menu-link">
                   <div data-i18n="Foro">Foro</div>
                 </a>
               </li>
@@ -273,17 +278,12 @@
                   <div class="dropdown-divider"></div>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="cambio_contra_agente.html">
+                  <a class="dropdown-item" href="../Sistema/cambio_contraseña.html">
                     <i class="bx bx-user me-2"></i>
                     <span class="align-middle">Cambio de Contraseña</span>
                   </a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="ajustes_superadmin.html">
-                    <i class="bx bx-cog me-2"></i>
-                    <span class="align-middle">Ajustes</span>
-                  </a>
-                </li>
+
 
                 <li>
                   <div class="dropdown-divider"></div>
@@ -308,195 +308,159 @@
         <!-- Aquí se agrega el contenido central -->
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 style="font-family: 'Poppins', sans-serif; color: #7367F0; font-weight: bold; padding-top: 1rem; padding-bottom: 1rem; margin-bottom: 1rem; text-align: center; font-size: 40px;">
-                Preguntas frecuentes
+                .
             </h4>
 
-            <div class="row"></div>
-                <div class="col-12">
-                  <div class="card mb-4">
-                    <h5 class="card-header">Todas las categorias</h5>
-                    <div class="card-body">
-                      <p class="card-text">
-                        ¡Bienvenido a nuestra sección de Preguntas Frecuentes! Aquí encontrarás respuestas a las dudas más comunes sobre nuestros productos y servicios. Si no encuentras lo que buscas, no dudes en contactarnos. ¡Estamos aquí para ayudarte!
-                      </p>
-                      <div class="accordion mt-3" id="accordionExample">
-                        <div class="card accordion-item active">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button
-                              type="button"
-                              class="accordion-button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionOne"
-                              aria-expanded="true"
-                              aria-controls="accordionOne"
-                            >
-                              ¿Como realizar el pedido sin problemas?
-                            </button>
-                          </h2>
-    
-                          <div
-                            id="accordionOne"
-                            class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
-                              marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
-                              soufflé. Wafer gummi bears marshmallow pastry pie.
-                            </div>
-                          </div>
-                        </div>
-                        <!------------------------------------------------->
+            <div class="card">
+                <div class="nav-align-top mb-4"></div>
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link "
+                          role="tab"
+                          id="faqs-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-top-home"
+                          aria-controls="navs-pills-top-home"
+                          aria-selected="false"
+                        >
+                          FAQs
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link active"
+                          role="tab"
+                          id="reseñas-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-top-profile"
+                          aria-controls="navs-pills-top-profile"
+                          aria-selected="true"
+                        >
+                          RESEÑAS
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link"
+                          role="tab"
+                          id="foro-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-top-messages"
+                          aria-controls="navs-pills-top-messages"
+                          aria-selected="false"
+                        >
+                          FORO
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
                         
-                        <div class="card accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button
-                              type="button"
-                              class="accordion-button collapsed"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionTwo"
-                              aria-expanded="false"
-                              aria-controls="accordionTwo"
-                            >
-                              Olvide mi contraseña. ¿Cómo puedo restablecerlo?
-                            </button>
-                          </h2>
-                          <div
-                            id="accordionTwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake
-                              dragée ice cream halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies.
-                              Jelly beans candy canes carrot cake. Fruitcake chocolate chupa chups.
-                            </div>
-                          </div>
-                        </div>
-                         <!------------------------------------------------->
-                        <div class="card accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button
-                              type="button"
-                              class="accordion-button collapsed"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionThree"
-                              aria-expanded="false"
-                              aria-controls="accordionThree"
-                            >
-                              ¿Cómo me comunico con el vendedor?
-                            </button>
-                          </h2>
-                          <div
-                            id="accordionThree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon
-                              gingerbread marshmallow sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake
-                              dragée caramels. Ice cream wafer danish cookie caramels muffin.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        <div class="tab-pane fade show active" id="navs-pills-top-profile" role="tabpanel">
+                            <div class="row">
+                                <div class="d-flex  justify-content-center align-items-center card-header">
+                                    <div class="col-md-6 position-relative store-search">
+                                        <form class="d-flex" onsubmit="return false">
+                                            <input class="form-control me-1" type="search" placeholder="Buscando..." aria-label="Search" style="width: 50%;"/>
+                                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                                        </form>
+                                    </div>
 
-                       <!------------------------------------------------->
-                      
-                      <div class="accordion mt-3" id="accordionExample">
-                        <div class="card accordion-item active">
-                          <h2 class="accordion-header" id="headingFour">
-                            <button
-                              type="button"
-                              class="accordion-button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionFour"
-                              aria-expanded="true"
-                              aria-controls="accordionFour"
-                            >
-                              ¿Cómo elimino un pedido?
-                            </button>
-                          </h2>
-    
-                          <div
-                            id="accordionFour"
-                            class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
-                              marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
-                              soufflé. Wafer gummi bears marshmallow pastry pie.
+                                </div>                            
                             </div>
-                          </div>
-                        </div>
+                            <div class="row">
+                                <!-- Blockquote -->
+                                <div class="accordion mt-3" id="accordionExample">
+                                    <div class="card accordion-item active">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <div
+                                          type="button"
+                                          class="accordion-button-static"
+                                          aria-expanded="true"
+                                          aria-controls="accordionOne"
+                                           style="margin-left:1rem;"
+                                        >
+                                          Reseña 1
+                                      </div>
+                                      </h2>
 
-                         <!------------------------------------------------->
-                        <div class="card accordion-item">
-                          <h2 class="accordion-header" id="headingFive">
-                            <button
-                              type="button"
-                              class="accordion-button collapsed"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionFive"
-                              aria-expanded="false"
-                              aria-controls="accordionFive"
-                            >
-                              ¿Cómo dejo comentarios sobre algun producto?
-                            </button>
-                          </h2>
-                          <div
-                            id="accordionFive"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="headingFive"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake
-                              dragée ice cream halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies.
-                              Jelly beans candy canes carrot cake. Fruitcake chocolate chupa chups.
-                            </div>
-                          </div>
-                        </div>
+                
+                                      <div
+                                        id="accordionOne"
+                                        class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample"
+                                      >
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <p class="col-md-3">Nombre del Agente </p>
+                                                
+                                                    <div class="product-rating col-md-6">
+                                                        <i class="bi bi-star-fill text-warning "></i>
+                                                        <i class="bi bi-star-fill text-warning "></i>
+                                                        <i class="bi bi-star-fill text-warning "></i>
+                                                        <i class="bi bi-star text-warning "></i>
+                                                        <i class="bi bi-star text-warning "></i>
+                                                    </div>
+                                                
+                                            </div>
+                                          DESCRIPCION DE RESEÑAS SOBRE UN PRODUCTO drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
+                                          marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
+                                          soufflé. Wafer gummi bears marshmallow pastry pie.
+                                          <div class="row my-2">
+                                            <div class="col-md-12" style="margin-bottom:1rem;">
+                                                <button class="btn btn-primary btn-sm float-end" type="submit">RESPONDER</button>
+                                            </div>
+                                          </div>
 
-                         <!------------------------------------------------->
-                        <div class="card accordion-item">
-                          <h2 class="accordion-header" id="headingSix">
-                            <button
-                              type="button"
-                              class="accordion-button collapsed"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#accordionSix"
-                              aria-expanded="false"
-                              aria-controls="accordionSix"
-                            >
-                              ¿Cómo puedo rastrear mi pedido?
-                            </button>
-                          </h2>
-                          <div
-                            id="accordionSix"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="headingSix"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon
-                              gingerbread marshmallow sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake
-                              dragée caramels. Ice cream wafer danish cookie caramels muffin.
+                                          <hr class="m-0">
+                                          <div class="row my-2">
+                                            <p>
+                                                RESEÑAS SOBRE UN PRODUCTO drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
+                                                marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
+                                                soufflé. Wafer gummi bears marshmallow pastry pie.
+                                            </p>
+                                          </div>
+
+                                          <hr class="m-0">
+                                          <div class="row my-2">
+                                            <p >
+                                                RESEÑAS SOBRE UN PRODUCTO drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
+                                          marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
+                                          soufflé. Wafer gummi bears marshmallow pastry pie.
+                                            </p>
+                                          </div>
+
+                                          <hr class="m-0">
+                                          <div class="row my-2">
+                                            <p >
+                                                RESEÑAS SOBRE UN PRODUCTO drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing
+                                          marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping
+                                          soufflé. Wafer gummi bears marshmallow pastry pie.
+                                            </p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                </div>
+
                             </div>
-                          </div>
+
+                            
+
+                            </div>
+                            
                         </div>
-                      </div>
-                      
-                      
                       
                     </div>
                   </div>
-                </div>
-                
             </div>
+
+           
 
 
           
@@ -512,6 +476,18 @@
   <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Deshabilitar botones de pestañas no deseadas
+        document.getElementById('faqs-tab').setAttribute('disabled', 'true');
+        document.getElementById('foro-tab').setAttribute('disabled', 'true');
+    
+        // Ocultar pestañas no deseadas
+        document.getElementById('navs-pills-top-home').style.display = 'none';
+        document.getElementById('navs-pills-top-messages').style.display = 'none';
+    });
+</script>
 
 
 
